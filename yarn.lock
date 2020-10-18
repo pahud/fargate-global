@@ -1989,9 +1989,9 @@ cdk-assets@1.68.0:
     yargs "^16.0.3"
 
 cdk-remote-stack@^0.1.38:
-  version "0.1.56"
-  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.56.tgz#7583bf1b50fa3fad5d3f673e2b5160ef2bf771af"
-  integrity sha512-YH1VVzUzxkU21X4MwOZfxeKZ3OJ/wPRq3XfxgOlzYIJw+ahCl/pPA7H1Ix8muAlbDq14WylQ4T5zsuG5Pvvp1w==
+  version "0.1.57"
+  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.57.tgz#c0922e3847ee7bac605db3f766ae7c9d3e69e6be"
+  integrity sha512-tmvJ7X/rYVChMP2hTUzlZFkoB2i1ItBGoCsA3a2jNxnGwNxFTo6JxIcVk3zX/LuAB8uICG0HyISOY4SIM0RQvw==
   dependencies:
     "@aws-cdk/aws-iam" "^1.62.0"
     "@aws-cdk/aws-lambda" "^1.62.0"
@@ -2185,9 +2185,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^3.0.4:
-  version "3.0.22"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.0.22.tgz#d2565985a2e3e2142c57d2673844fd6c3e27c54d"
-  integrity sha512-PuQVuCM7I2Y6rYsMsip+rTvwpgo8FXMQX4JNzbIL4dvG96Kqmhmb5qt6zI730LB1OlKGAe/r92xqgExUkGQo4w==
+  version "3.0.23"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.0.23.tgz#4cc5509a146eb1677d5676e48fae1fb41d9fc77b"
+  integrity sha512-B5S7HJIraedobqsmJlk7RJspvAWU+qV0VK1Rr5C0vi6lR/TAaGwm/j2+ZUUsNhMiik6oD50NpbNOGViWvK4O1Q==
 
 contains-path@^0.1.0:
   version "0.1.0"
