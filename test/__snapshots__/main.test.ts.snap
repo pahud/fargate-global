@@ -2179,6 +2179,7 @@ Object {
             "Arn",
           ],
         },
+        "randomString": "0fb4k6e6va3",
         "regionName": "us-west-2",
         "stackName": "FargateUSStack",
       },

@@ -32,7 +32,10 @@ export class Main {
     const ga = new GlobalAcceleratorProvider(gaStack, 'GlobalAcceleratorProvider');
 
     // cross-regional stack outputs from JP
-    const JPOutputs = new remoteStack.StackOutputs(gaStack, 'JPOutputs', { stack: fargateJP });
+    const JPOutputs = new remoteStack.StackOutputs(gaStack, 'JPOutputs', {
+      stack: fargateJP,
+      alwaysUpdate: false,
+    });
     const JPLoadBalancerDnsName = JPOutputs.getAttString('DnsName');
     const JPLoadBalancerArn = JPOutputs.getAttString('LoadBalancerArn');
 
