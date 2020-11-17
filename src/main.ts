@@ -25,7 +25,7 @@ export class Main {
 
     // fargate from US
     const fargateUS = new cdk.Stack(app, 'FargateUSStack', { env: envUS });
-    new FargateAlbService(fargateUS, 'FargateUSService');
+    new FargateAlbService(fargateUS, 'FargasteUSService');
 
     // Global Accelerator
     const gaStack = new cdk.Stack(app, 'GAStack', { env: envUS });
@@ -40,7 +40,10 @@ export class Main {
     const JPLoadBalancerArn = JPOutputs.getAttString('LoadBalancerArn');
 
     // cross-regional stack outputs from US
-    const USOutputs = new remoteStack.StackOutputs(gaStack, 'USOutputs', { stack: fargateUS });
+    const USOutputs = new remoteStack.StackOutputs(gaStack, 'USOutputs', {
+      stack: fargateUS,
+      alwaysUpdate: false,
+    });
     const USLoadBalancerDnsName = USOutputs.getAttString('DnsName');
     const USLoadBalancerArn = USOutputs.getAttString('LoadBalancerArn');
 

@@ -691,53 +691,53 @@ Object {
 exports[`Snapshot 2`] = `
 Object {
   "Outputs": Object {
-    "FargateUSServiceDnsName7497E96F": Object {
+    "FargasteUSServiceDnsName1966FB9A": Object {
       "Value": Object {
         "Fn::GetAtt": Array [
-          "FargateUSServiceFargateServiceLB1A663E75",
+          "FargasteUSServiceFargateServiceLBCA0A53E0",
           "DNSName",
         ],
       },
     },
-    "FargateUSServiceFargateServiceLoadBalancerDNSEDE62750": Object {
+    "FargasteUSServiceFargateServiceLoadBalancerDNS38910971": Object {
       "Value": Object {
         "Fn::GetAtt": Array [
-          "FargateUSServiceFargateServiceLB1A663E75",
+          "FargasteUSServiceFargateServiceLBCA0A53E0",
           "DNSName",
         ],
       },
     },
-    "FargateUSServiceFargateServiceServiceURL818E527D": Object {
+    "FargasteUSServiceFargateServiceServiceURLD48B2015": Object {
       "Value": Object {
         "Fn::Join": Array [
           "",
           Array [
             "https://",
             Object {
-              "Ref": "FargateUSServiceFargateServiceDNSE546765F",
+              "Ref": "FargasteUSServiceFargateServiceDNSEBF457CF",
             },
           ],
         ],
       },
     },
-    "FargateUSServiceLoadBalancerArn7785623B": Object {
+    "FargasteUSServiceLoadBalancerArnD54B7807": Object {
       "Value": Object {
-        "Ref": "FargateUSServiceFargateServiceLB1A663E75",
+        "Ref": "FargasteUSServiceFargateServiceLBCA0A53E0",
       },
     },
   },
   "Resources": Object {
-    "FargateUSServiceClusterE7A0988A": Object {
+    "FargasteUSServiceCluster4D48A270": Object {
       "Type": "AWS::ECS::Cluster",
     },
-    "FargateUSServiceFargateService9B788279": Object {
+    "FargasteUSServiceFargateService3F61114F": Object {
       "DependsOn": Array [
-        "FargateUSServiceFargateServiceLBPublicListenerECSGroup7390E02D",
-        "FargateUSServiceFargateServiceLBPublicListener0BB614FE",
+        "FargasteUSServiceFargateServiceLBPublicListenerECSGroupB45856DA",
+        "FargasteUSServiceFargateServiceLBPublicListener35F1A414",
       ],
       "Properties": Object {
         "Cluster": Object {
-          "Ref": "FargateUSServiceClusterE7A0988A",
+          "Ref": "FargasteUSServiceCluster4D48A270",
         },
         "DeploymentConfiguration": Object {
           "MaximumPercent": 200,
@@ -752,7 +752,7 @@ Object {
             "ContainerName": "flask",
             "ContainerPort": 80,
             "TargetGroupArn": Object {
-              "Ref": "FargateUSServiceFargateServiceLBPublicListenerECSGroup7390E02D",
+              "Ref": "FargasteUSServiceFargateServiceLBPublicListenerECSGroupB45856DA",
             },
           },
         ],
@@ -762,7 +762,7 @@ Object {
             "SecurityGroups": Array [
               Object {
                 "Fn::GetAtt": Array [
-                  "FargateUSServiceFargateServiceSecurityGroup98377221",
+                  "FargasteUSServiceFargateServiceSecurityGroup1F358AFA",
                   "GroupId",
                 ],
               },
@@ -778,12 +778,12 @@ Object {
           },
         },
         "TaskDefinition": Object {
-          "Ref": "FargateUSServiceTaskB6C05AC6",
+          "Ref": "FargasteUSServiceTask8E09E981",
         },
       },
       "Type": "AWS::ECS::Service",
     },
-    "FargateUSServiceFargateServiceDNSE546765F": Object {
+    "FargasteUSServiceFargateServiceDNSEBF457CF": Object {
       "Properties": Object {
         "AliasTarget": Object {
           "DNSName": Object {
@@ -793,7 +793,7 @@ Object {
                 "dualstack.",
                 Object {
                   "Fn::GetAtt": Array [
-                    "FargateUSServiceFargateServiceLB1A663E75",
+                    "FargasteUSServiceFargateServiceLBCA0A53E0",
                     "DNSName",
                   ],
                 },
@@ -802,7 +802,7 @@ Object {
           },
           "HostedZoneId": Object {
             "Fn::GetAtt": Array [
-              "FargateUSServiceFargateServiceLB1A663E75",
+              "FargasteUSServiceFargateServiceLBCA0A53E0",
               "CanonicalHostedZoneID",
             ],
           },
@@ -813,7 +813,7 @@ Object {
       },
       "Type": "AWS::Route53::RecordSet",
     },
-    "FargateUSServiceFargateServiceLB1A663E75": Object {
+    "FargasteUSServiceFargateServiceLBCA0A53E0": Object {
       "DependsOn": Array [
         "VpcPublicSubnet1DefaultRoute3DA9E72A",
         "VpcPublicSubnet2DefaultRoute97F91067",
@@ -829,7 +829,7 @@ Object {
         "SecurityGroups": Array [
           Object {
             "Fn::GetAtt": Array [
-              "FargateUSServiceFargateServiceLBSecurityGroup3E22DEED",
+              "FargasteUSServiceFargateServiceLBSecurityGroup20128E5A",
               "GroupId",
             ],
           },
@@ -846,7 +846,7 @@ Object {
       },
       "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
     },
-    "FargateUSServiceFargateServiceLBPublicListener0BB614FE": Object {
+    "FargasteUSServiceFargateServiceLBPublicListener35F1A414": Object {
       "Properties": Object {
         "Certificates": Array [
           Object {
@@ -867,20 +867,20 @@ Object {
         "DefaultActions": Array [
           Object {
             "TargetGroupArn": Object {
-              "Ref": "FargateUSServiceFargateServiceLBPublicListenerECSGroup7390E02D",
+              "Ref": "FargasteUSServiceFargateServiceLBPublicListenerECSGroupB45856DA",
             },
             "Type": "forward",
           },
         ],
         "LoadBalancerArn": Object {
-          "Ref": "FargateUSServiceFargateServiceLB1A663E75",
+          "Ref": "FargasteUSServiceFargateServiceLBCA0A53E0",
         },
         "Port": 443,
         "Protocol": "HTTPS",
       },
       "Type": "AWS::ElasticLoadBalancingV2::Listener",
     },
-    "FargateUSServiceFargateServiceLBPublicListenerECSGroup7390E02D": Object {
+    "FargasteUSServiceFargateServiceLBPublicListenerECSGroupB45856DA": Object {
       "Properties": Object {
         "Port": 80,
         "Protocol": "HTTP",
@@ -891,9 +891,9 @@ Object {
       },
       "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
     },
-    "FargateUSServiceFargateServiceLBSecurityGroup3E22DEED": Object {
+    "FargasteUSServiceFargateServiceLBSecurityGroup20128E5A": Object {
       "Properties": Object {
-        "GroupDescription": "Automatically created Security Group for ELB FargateUSStackFargateUSServiceFargateServiceLB01CD4EDA",
+        "GroupDescription": "Automatically created Security Group for ELB FargateUSStackFargasteUSServiceFargateServiceLBBA8918E3",
         "SecurityGroupIngress": Array [
           Object {
             "CidrIp": "0.0.0.0/0",
@@ -909,19 +909,19 @@ Object {
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "FargateUSServiceFargateServiceLBSecurityGrouptoFargateUSStackFargateUSServiceFargateServiceSecurityGroup1A33E5CC80C05C650B": Object {
+    "FargasteUSServiceFargateServiceLBSecurityGrouptoFargateUSStackFargasteUSServiceFargateServiceSecurityGroup92D885628076D2009B": Object {
       "Properties": Object {
         "Description": "Load balancer to target",
         "DestinationSecurityGroupId": Object {
           "Fn::GetAtt": Array [
-            "FargateUSServiceFargateServiceSecurityGroup98377221",
+            "FargasteUSServiceFargateServiceSecurityGroup1F358AFA",
             "GroupId",
           ],
         },
         "FromPort": 80,
         "GroupId": Object {
           "Fn::GetAtt": Array [
-            "FargateUSServiceFargateServiceLBSecurityGroup3E22DEED",
+            "FargasteUSServiceFargateServiceLBSecurityGroup20128E5A",
             "GroupId",
           ],
         },
@@ -930,9 +930,9 @@ Object {
       },
       "Type": "AWS::EC2::SecurityGroupEgress",
     },
-    "FargateUSServiceFargateServiceSecurityGroup98377221": Object {
+    "FargasteUSServiceFargateServiceSecurityGroup1F358AFA": Object {
       "Properties": Object {
-        "GroupDescription": "FargateUSStack/FargateUSService/FargateService/Service/SecurityGroup",
+        "GroupDescription": "FargateUSStack/FargasteUSService/FargateService/Service/SecurityGroup",
         "SecurityGroupEgress": Array [
           Object {
             "CidrIp": "0.0.0.0/0",
@@ -946,20 +946,20 @@ Object {
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "FargateUSServiceFargateServiceSecurityGroupfromFargateUSStackFargateUSServiceFargateServiceLBSecurityGroupC297A2CE80850F8598": Object {
+    "FargasteUSServiceFargateServiceSecurityGroupfromFargateUSStackFargasteUSServiceFargateServiceLBSecurityGroup418770708098E34A1A": Object {
       "Properties": Object {
         "Description": "Load balancer to target",
         "FromPort": 80,
         "GroupId": Object {
           "Fn::GetAtt": Array [
-            "FargateUSServiceFargateServiceSecurityGroup98377221",
+            "FargasteUSServiceFargateServiceSecurityGroup1F358AFA",
             "GroupId",
           ],
         },
         "IpProtocol": "tcp",
         "SourceSecurityGroupId": Object {
           "Fn::GetAtt": Array [
-            "FargateUSServiceFargateServiceLBSecurityGroup3E22DEED",
+            "FargasteUSServiceFargateServiceLBSecurityGroup20128E5A",
             "GroupId",
           ],
         },
@@ -967,7 +967,7 @@ Object {
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
     },
-    "FargateUSServiceTaskB6C05AC6": Object {
+    "FargasteUSServiceTask8E09E981": Object {
       "Properties": Object {
         "ContainerDefinitions": Array [
           Object {
@@ -989,7 +989,7 @@ Object {
           },
         ],
         "Cpu": "256",
-        "Family": "FargateUSStackFargateUSServiceTask73F18E3A",
+        "Family": "FargateUSStackFargasteUSServiceTask921AA722",
         "Memory": "512",
         "NetworkMode": "awsvpc",
         "RequiresCompatibilities": Array [
@@ -997,14 +997,14 @@ Object {
         ],
         "TaskRoleArn": Object {
           "Fn::GetAtt": Array [
-            "FargateUSServiceTaskTaskRoleD0A0CE84",
+            "FargasteUSServiceTaskTaskRoleDD5AD4E9",
             "Arn",
           ],
         },
       },
       "Type": "AWS::ECS::TaskDefinition",
     },
-    "FargateUSServiceTaskTaskRoleD0A0CE84": Object {
+    "FargasteUSServiceTaskTaskRoleDD5AD4E9": Object {
       "Properties": Object {
         "AssumeRolePolicyDocument": Object {
           "Statement": Array [
@@ -2179,7 +2179,6 @@ Object {
             "Arn",
           ],
         },
-        "randomString": "0fb4k6e6va3",
         "regionName": "us-west-2",
         "stackName": "FargateUSStack",
       },
