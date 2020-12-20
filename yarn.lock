@@ -407,7 +407,7 @@
     "@aws-cdk/custom-resources" "1.79.0"
     constructs "^3.2.0"
 
-"@aws-cdk/aws-iam@1.79.0", "@aws-cdk/aws-iam@^1.62.0":
+"@aws-cdk/aws-iam@1.79.0", "@aws-cdk/aws-iam@^1.77.0":
   version "1.79.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.79.0.tgz#456f0cc824c6e248378fcddfecb49637d7656089"
   integrity sha512-lGgmOpdE2f05vQ3oT3pWlybTNb/PQcqkbdiBfvBPRYrg5p3lCGBDFSI3bv7Bjvl7lHhFRnxHnRb4CJRAXcUQqw==
@@ -445,7 +445,7 @@
     "@aws-cdk/cx-api" "1.79.0"
     constructs "^3.2.0"
 
-"@aws-cdk/aws-lambda@1.79.0", "@aws-cdk/aws-lambda@^1.62.0":
+"@aws-cdk/aws-lambda@1.79.0", "@aws-cdk/aws-lambda@^1.77.0":
   version "1.79.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda/-/aws-lambda-1.79.0.tgz#dfdfd699d376d79a04e399a023b126e2904f5117"
   integrity sha512-K6A0nnYRO5MGq+0UdAXk1DRcOELWSPri4f6SNaWu0zhOEBKSAzcVRTJi/cNDs5VniGbGik4/3C5Hd6+8bp5nxA==
@@ -468,7 +468,7 @@
     "@aws-cdk/cx-api" "1.79.0"
     constructs "^3.2.0"
 
-"@aws-cdk/aws-logs@1.79.0", "@aws-cdk/aws-logs@^1.62.0":
+"@aws-cdk/aws-logs@1.79.0", "@aws-cdk/aws-logs@^1.77.0":
   version "1.79.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-logs/-/aws-logs-1.79.0.tgz#b7ac08de2e1c3872a6bdf49488d92bf6b7425d55"
   integrity sha512-J3iYGun//JsqpMl75/b6c+yxA5nY+Dxn0s72TA/BBYzaU4wI2NohwVaqe2X4HIuHniRBVVHBfJ36B3GMKdi4cQ==
@@ -669,7 +669,7 @@
     string-width "^4.2.0"
     table "^6.0.4"
 
-"@aws-cdk/core@1.79.0", "@aws-cdk/core@^1.62.0", "@aws-cdk/core@^1.77.0":
+"@aws-cdk/core@1.79.0", "@aws-cdk/core@^1.77.0":
   version "1.79.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.79.0.tgz#164b2f01877259eeb1ba16617be103522ae934d6"
   integrity sha512-I+2GbQfbPy6TewnGbviE1W8cUhgBEA1mQLYm5gBj/Rzix1tCyaNvfYsBU3ipg3jIATpHsg1CzUq0zrumUnmnTg==
@@ -683,7 +683,7 @@
     ignore "^5.1.8"
     minimatch "^3.0.4"
 
-"@aws-cdk/custom-resources@1.79.0", "@aws-cdk/custom-resources@^1.62.0":
+"@aws-cdk/custom-resources@1.79.0", "@aws-cdk/custom-resources@^1.77.0":
   version "1.79.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/custom-resources/-/custom-resources-1.79.0.tgz#2b68ee4e03a7d517693d0009e8380c045b968e90"
   integrity sha512-+F4dpo/vju7kfNnajw9Fl2XwTmVG7qzYZ6weuKtfr0iFDHrBCZ5auGP45u8gHeNebnCdq51TNG9gskQ3ct5Aiw==
@@ -2029,15 +2029,15 @@ cdk-assets@1.79.0:
     yargs "^16.2.0"
 
 cdk-remote-stack@^0.1.38:
-  version "0.1.110"
-  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.110.tgz#55bffd93b1be6af8a9d7e114a7f1db5ccf3b707b"
-  integrity sha512-VabBRTHQJuXIa4JIJw2ieTnAZ0KNUXA5QdQqU3rp5DhtEW32XyAGJeVgpKRudq8w94KD2TGEVV0Ul6SZ6owuDg==
+  version "0.1.111"
+  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.111.tgz#4ad9237cdb6413e3589503c47b63ea98d2313511"
+  integrity sha512-kTR+At78kPrO/d4CnaDPu34LrWcq1dv9LnVCnrPwaMAGNAyeyJjg3CaMqRgbhXN/VbS5MyXjqTzEc+2yMydWzQ==
   dependencies:
-    "@aws-cdk/aws-iam" "^1.62.0"
-    "@aws-cdk/aws-lambda" "^1.62.0"
-    "@aws-cdk/aws-logs" "^1.62.0"
-    "@aws-cdk/core" "^1.62.0"
-    "@aws-cdk/custom-resources" "^1.62.0"
+    "@aws-cdk/aws-iam" "^1.77.0"
+    "@aws-cdk/aws-lambda" "^1.77.0"
+    "@aws-cdk/aws-logs" "^1.77.0"
+    "@aws-cdk/core" "^1.77.0"
+    "@aws-cdk/custom-resources" "^1.77.0"
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -5515,10 +5515,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.6.16:
-  version "0.6.16"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.6.16.tgz#f3c72b52fe6048665bd285785aad72f512116e69"
-  integrity sha512-Gz7HepmYxSxX4RXOErPa8/CmXsh/vku82wWuE2pKaTUVKvH2trDCjptT3S1R0tzx5J/IUJ1LO+LRSpiKxJ5RDg==
+projen@^0.6.17:
+  version "0.6.17"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.6.17.tgz#6102813cbc5a212454c556db20e1827b553f882e"
+  integrity sha512-qZxXVG1yLdTuJ6y+dEp7b7eOfBat0Mod5+jRggx7aE0vtIbrhqL524wLq7bKpsAK1LaPAOObs5skW/xRv/Jvmg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"
