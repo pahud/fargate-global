@@ -1725,9 +1725,9 @@ aws-cdk@^1.77.0:
     yargs "^16.2.0"
 
 aws-sdk@^2.804.0:
-  version "2.818.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.818.0.tgz#5e71742f2a2727dc313458071e6e5a343fc08d85"
-  integrity sha512-xxIEdaKXtrEZNVUvKiW8MRj1Ux2tH/ubDLl8+tnrfhNOJbq5u5FfD56Kui4Ca+CG4xamQ5LaBktVYWAEyaMtUw==
+  version "2.819.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.819.0.tgz#bc2d878543cc170af2c58704422bcfc38c08dc3b"
+  integrity sha512-Eu/YVodZN6oBL5P3NtUJDeZwlV2kPEn4PKfK+5kQmQnxx1+EepP9SvYel7f7RfYi9XtzsMnUz7ms5p1DsRAa6Q==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2030,9 +2030,9 @@ cdk-assets@1.80.0:
     yargs "^16.2.0"
 
 cdk-remote-stack@^0.1.38:
-  version "0.1.117"
-  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.117.tgz#ca519abac316b57e7c3542862e00c2aa5d7de89c"
-  integrity sha512-a6UMVh0yXOQpaR5BW7rvmiUv/+HLahnQUdV0dQTtKpKEr56hRkKj6NBDFqlXmvSHUbKYJBmrCPCmmfqVaWe+IA==
+  version "0.1.118"
+  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.118.tgz#a30d075c7da7aa6754e8c6ba5d0c19f20f8e9a64"
+  integrity sha512-QwvEc6yB2FVDaRpU5UCKiWnhM15d/q2NeZxyLB85DqSODodVjragwvngjeGI8llnei2bHxx1FE88v3tPUJm2CA==
   dependencies:
     "@aws-cdk/aws-iam" "^1.77.0"
     "@aws-cdk/aws-lambda" "^1.77.0"
@@ -2222,9 +2222,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^3.2.0:
-  version "3.2.82"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.2.82.tgz#bc5decf72106ff4e47b50ea2d7295aeb4bdda722"
-  integrity sha512-80EOj+tfy7kSNEgj/xeJLCjRsQ7TpMdkNox05BTTxbLWh33O8W2jYHqzlI8BmPXtCyRoPUXDVkOsZJtT2BoqEA==
+  version "3.2.84"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.2.84.tgz#c3b97ba75f67fad1a81225995fc94f2038ecb7f9"
+  integrity sha512-s9nJluuLGjbRhfCDnOgTe7ZHko8ceQClxYZ5oEs40H/12dkCtH60PPawZq3YUfJbSeOv8Zu79ePkv8jfGADf4Q==
 
 contains-path@^0.1.0:
   version "0.1.0"
@@ -2277,16 +2277,16 @@ conventional-changelog-conventionalcommits@^4.4.0:
     q "^1.5.1"
 
 conventional-changelog-core@^4.2.0:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.2.1.tgz#f811ad98ab2ff080becafc61407509420c9b447d"
-  integrity sha512-8cH8/DEoD3e5Q6aeogdR5oaaKs0+mG6+f+Om0ZYt3PNv7Zo0sQhu4bMDRsqAF+UTekTAtP1W/C41jH/fkm8Jtw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.2.2.tgz#f0897df6d53b5d63dec36b9442bd45354f8b3ce5"
+  integrity sha512-7pDpRUiobQDNkwHyJG7k9f6maPo9tfPzkSWbRq97GGiZqisElhnvUZSvyQH20ogfOjntB5aadvv6NNcKL1sReg==
   dependencies:
     add-stream "^1.0.0"
     conventional-changelog-writer "^4.0.18"
     conventional-commits-parser "^3.2.0"
     dateformat "^3.0.0"
     get-pkg-repo "^1.0.0"
-    git-raw-commits "2.0.0"
+    git-raw-commits "^2.0.8"
     git-remote-origin-url "^2.0.0"
     git-semver-tags "^4.1.1"
     lodash "^4.17.15"
@@ -2339,9 +2339,9 @@ conventional-changelog-preset-loader@^2.3.4:
   integrity sha512-GEKRWkrSAZeTq5+YjUZOYxdHq+ci4dNwHvpaBC3+ENalzFWuCWa9EZXSuZBpkr72sMdKB+1fyDV4takK1Lf58g==
 
 conventional-changelog-writer@^4.0.18:
-  version "4.0.18"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-4.0.18.tgz#10b73baa59c7befc69b360562f8b9cd19e63daf8"
-  integrity sha512-mAQDCKyB9HsE8Ko5cCM1Jn1AWxXPYV0v8dFPabZRkvsiWUul2YyAqbIaoMKF88Zf2ffnOPSvKhboLf3fnjo5/A==
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-4.1.0.tgz#1ca7880b75aa28695ad33312a1f2366f4b12659f"
+  integrity sha512-WwKcUp7WyXYGQmkLsX4QmU42AZ1lqlvRW9mqoyiQzdD+rJWbTepdWoKJuwXTS+yq79XKnQNa93/roViPQrAQgw==
   dependencies:
     compare-func "^2.0.0"
     conventional-commits-filter "^2.0.7"
@@ -2499,6 +2499,11 @@ dargs@^4.0.1:
   integrity sha1-A6nbtLXC8Tm/FK5T8LiipqhvThc=
   dependencies:
     number-is-nan "^1.0.0"
+
+dargs@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/dargs/-/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
+  integrity sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -3383,6 +3388,17 @@ git-raw-commits@2.0.0:
     meow "^4.0.0"
     split2 "^2.0.0"
     through2 "^2.0.0"
+
+git-raw-commits@^2.0.8:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-2.0.9.tgz#5cbc707a615cb77b71e687f8a1ee54af46208b22"
+  integrity sha512-hSpNpxprVno7IOd4PZ93RQ+gNdzPAIrW0x8av6JQDJGV4k1mR9fE01dl8sEqi2P7aKmmwiGUn1BCPuf16Ae0Qw==
+  dependencies:
+    dargs "^7.0.0"
+    lodash.template "^4.0.2"
+    meow "^8.0.0"
+    split2 "^3.0.0"
+    through2 "^4.0.0"
 
 git-remote-origin-url@^2.0.0:
   version "2.0.0"
@@ -5516,10 +5532,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.12.2:
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.12.2.tgz#7b29f915ad7ce482dd902b56903899eb3925f214"
-  integrity sha512-ZD2j8flYp3QJ+0//9A0WlHEvCOVC1MEaQD1paxdevr/hzmmLxGovGJ9GdanD3TS6WrKJyyRTbcxUfJVC4RxQ1w==
+projen@^0.12.3:
+  version "0.12.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.12.3.tgz#ee2fe4e610c1584160acdd5da162c337f8233cce"
+  integrity sha512-Nt4S1tVobBphACDH9/CXZ+F8KblqWr1VXuhRFvrkg0MvDlELSw0qUI8uT7xYmkLW8K6Z4/aU/Fvi2uaEc5xV5g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"
@@ -5715,7 +5731,7 @@ readable-stream@1.1.x:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@3, readable-stream@^3.0.2, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
+readable-stream@3, readable-stream@^3.0.0, readable-stream@^3.0.2, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -6223,6 +6239,13 @@ split2@^2.0.0:
   dependencies:
     through2 "^2.0.2"
 
+split2@^3.0.0:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/split2/-/split2-3.2.2.tgz#bf2cf2a37d838312c249c89206fd7a17dd12365f"
+  integrity sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==
+  dependencies:
+    readable-stream "^3.0.0"
+
 split@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/split/-/split-1.0.1.tgz#605bd9be303aa59fb35f9229fbea0ddec9ea07d9"
@@ -6456,9 +6479,9 @@ table@^6.0.4:
     string-width "^4.2.0"
 
 tar-stream@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.1.4.tgz#c4fb1a11eb0da29b893a5b25476397ba2d053bfa"
-  integrity sha512-o3pS2zlG4gxr67GmFYBLlq+dM8gyRGUOvsrHclSkvtVtQbjV0s/+ZE8OpICbaj8clrX3tjeHngYGP7rweaBnuw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.2.0.tgz#acad84c284136b060dc3faa64474aa9aebd77287"
+  integrity sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==
   dependencies:
     bl "^4.0.3"
     end-of-stream "^1.4.1"
@@ -6979,9 +7002,9 @@ write-file-atomic@^3.0.0:
     typedarray-to-buffer "^3.1.5"
 
 ws@^7.2.3:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.1.tgz#a333be02696bd0e54cea0434e21dcc8a9ac294bb"
-  integrity sha512-pTsP8UAfhy3sk1lSk/O/s4tjD0CRwvMnzvwr4OKGX7ZvqZtUyx4KIJB5JWbkykPoc55tixMGgTNoh3k4FkNGFQ==
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.2.tgz#782100048e54eb36fe9843363ab1c68672b261dd"
+  integrity sha512-T4tewALS3+qsrpGI/8dqNMLIVdq/g/85U98HPMa6F0m6xTbvhXU6RCQLqPH3+SlomNV/LdY6RXEbBpMH6EOJnA==
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
