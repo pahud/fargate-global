@@ -9,7 +9,10 @@ junit.xml
 /test
 /.mergify.yml
 /tsconfig.json
+!/lib
 /src
+!/lib/**/*.js
+!/lib/**/*.d.ts
 dist
 /.github
 /.vscode
@@ -21,6 +24,3 @@ cdk.out/
 cdk.context.json
 docker-compose.yml
 yarn-error.log
-!/lib
-!/lib/**/*.js
-!/lib/**/*.d.ts
