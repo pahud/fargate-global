@@ -2074,9 +2074,9 @@ cdk-assets@1.87.1:
     yargs "^16.2.0"
 
 cdk-remote-stack@^0.1.134:
-  version "0.1.134"
-  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.134.tgz#1b148e24002e844dac796e71a5bed16e00c5cc11"
-  integrity sha512-9HlIEUT/ChzIjRY7mRBnTiL0kRv2eTZzhtozDt3hhuKsJIThXGH7hTC93alKByvtiAFgQBQIKmB+m2fd0AmGBg==
+  version "0.1.135"
+  resolved "https://registry.yarnpkg.com/cdk-remote-stack/-/cdk-remote-stack-0.1.135.tgz#cbf91d81cda3df2464301ab47d5bbd67190a242e"
+  integrity sha512-tiUgk+Gmu/y6tBdmr5B9R/glHdBXmG3T8/rXzimFrurwsMRk79G92X2Lm3swMQHUQHXrU1HJrAIuup/a4miePQ==
   dependencies:
     "@aws-cdk/aws-iam" "^1.77.0"
     "@aws-cdk/aws-lambda" "^1.77.0"
@@ -2266,9 +2266,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^3.2.0:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.1.tgz#13528cd0d37d8281f3f167bbe5450473a450f322"
-  integrity sha512-BlS0x6cjIyQaCkmwOVybOKc6aHlNCc4rKKYj+xopfHY85QI+nGioLS/qs1i5rHIWQTyqXjYgmk8u7J7kSWh5AA==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.3.tgz#532d3b736d2a9f090fc5ded1e43d4a1b17819290"
+  integrity sha512-tus97CfZU14VcAdM5Qhg5OGMj89IAyxOyomt7h2Gup5EpBiMz6yIkOsxV9GAh30xmUKWSAwX56AD8QjzZCjIEQ==
 
 contains-path@^0.1.0:
   version "0.1.0"
@@ -5595,10 +5595,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.15.14:
-  version "0.15.14"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.15.14.tgz#43db1fdd515fb0ebaa92779d77d4bb5db98a9526"
-  integrity sha512-fYxuV63nmvmRrWkNIUsOtjWzBnNYhmeNHNpAenweOnK50qC6cmJhNatsizZlwVuP1YwyfBjvgJKdoGmLv+SVOg==
+projen@^0.15.17:
+  version "0.15.17"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.15.17.tgz#f46ada243e656ccc4db87605ebe31d1309263e8f"
+  integrity sha512-KYOLJ6LV7RkuF6Wj0z1j2IxXKrtJMuLVODZSgglkUDRAadDKjrae28rkNFhIqNEJnWiHcWMRhQIWNJjcrZnGkQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"
@@ -7061,9 +7061,9 @@ write-file-atomic@^3.0.0:
     typedarray-to-buffer "^3.1.5"
 
 ws@^7.2.3:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.2.tgz#782100048e54eb36fe9843363ab1c68672b261dd"
-  integrity sha512-T4tewALS3+qsrpGI/8dqNMLIVdq/g/85U98HPMa6F0m6xTbvhXU6RCQLqPH3+SlomNV/LdY6RXEbBpMH6EOJnA==
+  version "7.4.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.3.tgz#1f9643de34a543b8edb124bdcbc457ae55a6e5cd"
+  integrity sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
