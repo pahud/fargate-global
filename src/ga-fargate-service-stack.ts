@@ -1,7 +1,7 @@
 import * as certmgr from '@aws-cdk/aws-certificatemanager';
 import { Vpc, IVpc } from '@aws-cdk/aws-ec2';
-import { ApplicationLoadBalancedFargateService } from '@aws-cdk/aws-ecs-patterns';
 import { Cluster, ContainerImage, TaskDefinition, Compatibility } from '@aws-cdk/aws-ecs';
+import { ApplicationLoadBalancedFargateService } from '@aws-cdk/aws-ecs-patterns';
 import * as ga from '@aws-cdk/aws-globalaccelerator';
 import * as route53 from '@aws-cdk/aws-route53';
 import * as cdk from '@aws-cdk/core';
