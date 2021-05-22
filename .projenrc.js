@@ -1,7 +1,4 @@
 const { AwsCdkTypeScriptApp } = require('projen');
-const { Automation } = require('projen-automate-it');
-
-const AUTOMATION_TOKEN = 'PROJEN_GITHUB_TOKEN';
 
 const project = new AwsCdkTypeScriptApp({
   cdkVersion: '1.77.0',
@@ -23,18 +20,9 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-route53-targets',
     '@aws-cdk/core',
   ],
-  deps: ['cdk-remote-stack', 'projen-automate-it'],
+  deps: ['cdk-remote-stack'],
   defaultReleaseBranch: ['main'],
 });
-
-
-const automation = new Automation(project, {
-  automationToken: AUTOMATION_TOKEN,
-});
-automation.autoApprove();
-automation.autoMerge();
-automation.projenYarnUpgrade();
-
 
 const common_exclude = ['cdk.context.json', 'docker-compose.yml', 'yarn-error.log'];
 project.npmignore.exclude(...common_exclude);

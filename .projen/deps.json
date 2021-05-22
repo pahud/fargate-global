@@ -52,8 +52,18 @@
       "type": "build"
     },
     {
+      "name": "npm-check-updates",
+      "version": "^11",
+      "type": "build"
+    },
+    {
+      "name": "npm-check-updates",
+      "version": "^11",
+      "type": "build"
+    },
+    {
       "name": "projen",
-      "version": "^0.17.92",
+      "version": "^0.18.5",
       "type": "build"
     },
     {
@@ -140,10 +150,6 @@
     },
     {
       "name": "cdk-remote-stack",
-      "type": "runtime"
-    },
-    {
-      "name": "projen-automate-it",
       "type": "runtime"
     }
   ],
